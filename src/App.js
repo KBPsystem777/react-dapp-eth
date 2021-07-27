@@ -10,8 +10,8 @@ require("dotenv").config()
 // logged out to the CLI when it was deployed
 
 // const greeterAddress = "0x5FbDB2315678afecb367f032d93F642f64180aa3"
-const greeterAddress = "0xe966e5a770A2a8f1515B2AAB34bAbbddcd6bFD23"
-const tokenAddress = "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9"
+const greeterAddress = process.env.REACT_APP_TOKEN_ADDRESS
+const tokenAddress = process.env.REACT_APP_GREETER_ADDRESS
 
 console.log("Key", process.env.REACT_APP_AccountKey)
 
